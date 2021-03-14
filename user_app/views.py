@@ -98,7 +98,6 @@ def upload_s3(file, key_name, content_type):
     )
 
     # upload the file after getting the right bucket
-    import pdb; pdb.set_trace()
     try:
         s3.upload_file(
             Bucket = BUCKET_NAME,
